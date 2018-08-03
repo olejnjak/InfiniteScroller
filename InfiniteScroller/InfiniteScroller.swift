@@ -24,7 +24,7 @@ public final class InfiniteScroller {
     
     // MARK: Initializers
     
-    internal init(scrollView: UIScrollView, bottomTreshold: CGFloat = UIScreen.main.bounds.height) {
+    public init(scrollView: UIScrollView, bottomTreshold: CGFloat = UIScreen.main.bounds.height) {
         self.scrollView = scrollView
         self.bottomTreshold = bottomTreshold
     }

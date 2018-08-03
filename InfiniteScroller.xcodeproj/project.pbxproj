@@ -14,7 +14,6 @@
 		69B86B9721144CE600FBC052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B86B9621144CE600FBC052 /* Assets.xcassets */; };
 		69B86B9A21144CE600FBC052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B86B9821144CE600FBC052 /* LaunchScreen.storyboard */; };
 		69B86BA021144FA200FBC052 /* InfiniteScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B86B9F21144FA200FBC052 /* InfiniteScroller.swift */; };
-		69B86BA2211451DA00FBC052 /* UIScrollViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B86BA1211451DA00FBC052 /* UIScrollViewExtensions.swift */; };
 		69B86BA3211452A400FBC052 /* InfiniteScroller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6922F08D21132F24003474FC /* InfiniteScroller.framework */; };
 		69B86BA4211452A400FBC052 /* InfiniteScroller.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6922F08D21132F24003474FC /* InfiniteScroller.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		69B86B9921144CE600FBC052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69B86B9B21144CE600FBC052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69B86B9F21144FA200FBC052 /* InfiniteScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScroller.swift; sourceTree = "<group>"; };
-		69B86BA1211451DA00FBC052 /* UIScrollViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtensions.swift; sourceTree = "<group>"; };
 		69B86BA82114714400FBC052 /* InfiniteScroller.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = InfiniteScroller.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				69B86B9F21144FA200FBC052 /* InfiniteScroller.swift */,
-				69B86BA1211451DA00FBC052 /* UIScrollViewExtensions.swift */,
 				6922F09821132F38003474FC /* Supporting files */,
 			);
 			path = InfiniteScroller;
@@ -244,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69B86BA021144FA200FBC052 /* InfiniteScroller.swift in Sources */,
-				69B86BA2211451DA00FBC052 /* UIScrollViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

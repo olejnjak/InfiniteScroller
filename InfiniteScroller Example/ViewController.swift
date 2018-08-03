@@ -16,21 +16,27 @@ final class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private lazy var infiniteScroller = InfiniteScroller(scrollView: tableView)
+    
+    // MARK: Initializers
+    
+    deinit {
+        print("⚰️ [DEINIT]", self)
+    }
+    
+    // MARK: View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
      
-        tableView.infiniteScroller.nextPageAction = { [weak self] completion in
+        infiniteScroller.nextPageAction = { [weak self] completion in
             self?.page += 1
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 completion()
             }
         }
-        tableView.infiniteScroller.start()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        infiniteScroller.start()
     }
 }
 
