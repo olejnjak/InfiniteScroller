@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'InfiniteScroller'
-    s.version          = '0.1.2'
+    s.version          = '0.1.3'
     s.summary          = 'Simply implement infinite scroll'
     s.description      = <<-DESC
     Simplifies custom implementation of infinite scroll
