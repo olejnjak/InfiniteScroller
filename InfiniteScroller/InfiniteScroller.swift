@@ -58,7 +58,7 @@ public final class InfiniteScroller {
         
         let offsetY = scrollView.contentOffset.y
         let actionOffset = scrollView.contentSize.height - bottomTreshold
-        let isOffsetAfterTreshhold = offsetY > actionOffset || offsetY >= scrollView.contentSize.height
+        let isOffsetAfterTreshhold = offsetY > actionOffset || offsetY >= (scrollView.contentSize.height - scrollView.bounds.height)
         
         if isOffsetAfterTreshhold, offsetY > 0, lastNextPageCall.timeIntervalSinceNow < -nextPageDebouncePeriod, !isNextPageActionExecuting {
             startNextPageAction()
