@@ -2,6 +2,8 @@
 
 ## Motivation
 
+Well in my apps I always deal with the same things again. Every scrolling screen which displays paged data needs to load next page some time. To save some time I created this microlibrary which should deal with everything that is necessary. 
+
 ## Usage
 
 ## Installation
