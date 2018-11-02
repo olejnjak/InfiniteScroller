@@ -8,6 +8,26 @@ Well in my apps I always deal with the same things again. Every scrolling screen
 
 ## Usage
 
+Usage is very simple. Just create an instance of `InfiniteScroller` with the scrollView you want paged.
+
+```swift
+let infiniteScroller = InfiniteScroll(scrollView: scrollView)
+```
+
+Add the next page callback.
+
+```swift
+infiniteScroller.nextPageAction = { [weak self] completion in
+    loadNextPage { completion() }
+}
+```
+
+**Remember to call the `completion` callback when loading next page finishes**
+
+And that's all. Remember that if you loose any reference to the `InfiniteScroller` instance, it will get deallocated and you will not receive any callbacks so you have to keep strong reference somewhere (e.g. in the view controller).
+
+For more details you can check included example. 🙂
+
 ## Installation
 
 _InfiniteScroller_ is available through [Carthage](https://github.com/Carthage/Carthage). Just add it to your Cartfile:
