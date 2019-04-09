@@ -1,4 +1,27 @@
-osx_image: xcode10.1
+osx_image: xcode10.2
 language: objective-c
+env:
+  global:
+  - FRAMEWORK_NAME=InfiniteScroller
+cache:
+  directories:
+  - Carthage
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_deploy:
+- carthage archive $FRAMEWORK_NAME
 script:
-- set -o pipefail && xcodebuild -scheme "InfiniteScroller" -destination 'platform=iOS Simulator,name=iPhone XS,OS=12.1' ONLY_ACTIVE_ARCH=YES | xcpretty
+- carthage build --no-skip-current --platform iOS --cache-builds
+- pod lib lint
+after_deploy:
+- pod trunk push
+deploy:
+  provider: releases
+  api_key:
+    secure: iSPtnKbFFrq388oolnR5KvgGhboFIlk3Kd/qX72ABvCzY9d8kia4y9H9eu6kaLlibAYKsE3BfFQuUtENt8/Hzzq7bYRwNdd4G/rw61wVrIigtADBlHHWwzXhL+rqsER9yEalYvNIrFAq5B2uMDRcRn2KDbzzAWFyGpCArTx/7H0I7OhiIvG3FamsMton+rzLJK1+dN0SsR7t20Rz66t77FcrZyXwJ+4RtADrstUnDx+bsy83aFCOVexAM6Dbm52tcZh16XJhZodUwuDK6zUaxSCZPGHHTRSi29EXdRBNuGEoAksg3b96giLxK+g5MITr8DiAEy/CCYe0h8w7uByjp1i84quukBa0cKCiIriWAwVuoVBXKKcEi1JQsJT//+KDssja7/h/X6uZy60vFjdBpGOux9ga13jFAZUR0Je/5qict9kNAlHfymz1xLdta8ICsQzlhRmh7/TBSCk7liueH+gdYLXRWfF8sgHGShxlTMF5FYcaeuGT0KrAvz5Da4yskj+xlRkTHW4oRAtWD6zBNloCOELDYJhyCAvq+uIVVFgTMvUzcSEvKkgNjADStmfCtO5QWJvzaGULsuKsOAFRQBWqOVq6s4OetI7I0Ex6fNw2ZX148olNTlIkjhrU1xAWeEsPcr+DRkZC2MKAfvsDJLn7vvGvi747sWfLaHvrwSI=
+  file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
+  on:
+    repo: olejnjak/InfiniteScroller
+    tags: true
