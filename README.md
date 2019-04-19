@@ -1,4 +1,19 @@
-# InfiniteScroller
+<p align='center'>
+    <img src="Logo.png" width="480" max-width="90%" alt="Infinite Scroller">
+</p>
+
+<p align="center">
+    <img src="https://travis-ci.com/olejnjak/InfiniteScroller.svg?branch=master" alt="Travis CI build status">
+    <a href="https://http://cocoapods.org/pods/InfiniteScroller">
+        <img src="https://img.shields.io/cocoapods/v/InfiniteScroller.svg?style=flat)](http://cocoapods.org/pods/InfiniteScroller" alt="InfiniteScroller">
+    </a>
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/carthage-compatible-brightgreen.svg?style=flat" alt="Carthage" />
+    </a>
+    <a href="https://twitter.com/olejnjak">
+        <img src="https://img.shields.io/badge/twitter-@olejnjak-blue.svg?style=flat" alt="Twitter" />
+    </a>
+</p>
 
 Microlibrary which simplifies implementation of infinite scroll in `UIScrollView`.
 
