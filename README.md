@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://travis-ci.com/olejnjak/InfiniteScroller.svg?branch=master" alt="Travis CI build status">
-    <a href="https://http://cocoapods.org/pods/InfiniteScroller">
+    <a href="https://cocoapods.org/pods/InfiniteScroller">
         <img src="https://img.shields.io/cocoapods/v/InfiniteScroller.svg?style=flat)](http://cocoapods.org/pods/InfiniteScroller" alt="InfiniteScroller">
     </a>
     <a href="https://github.com/Carthage/Carthage">
