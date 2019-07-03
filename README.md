@@ -37,6 +37,14 @@ infiniteScroller.nextPageAction = { [weak self] completion in
 }
 ```
 
+If you've done all of that then just start the scroller.
+
+```swift
+infiniteScroller.start()
+```
+
+Then later if your reach last items of your stream, you can stop the scroller by calling `stop()` method.
+
 **Remember to call the `completion` callback when loading next page finishes**
 
 And that's all. Remember that if you loose any reference to the `InfiniteScroller` instance, it will get deallocated and you will not receive any callbacks so you have to keep strong reference somewhere (e.g. in the view controller).
