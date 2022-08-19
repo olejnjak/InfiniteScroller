@@ -34,13 +34,13 @@ public final class InfiniteScroller {
     public func start() {
         assert(scrollView != nil, "Unexpected nil scrollview")
         
-        if let scrollView = scrollView {
+        if let scrollView = scrollView, scrollViewObservation == nil {
             observeScrollView(scrollView)
         }
     }
     
     public func stop() {
-        scrollViewObservation?.invalidate()
+        scrollViewObservation = nil
     }
     
     // MARK: Private helpers
