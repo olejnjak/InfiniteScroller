@@ -1,4 +1,4 @@
-osx_image: xcode10.2
+osx_image: xcode13.4
 language: objective-c
 env:
   global:
@@ -12,10 +12,10 @@ before_install:
 before_deploy:
 - carthage archive $FRAMEWORK_NAME
 script:
-- carthage build --no-skip-current --platform iOS --cache-builds
-- pod lib lint
+- carthage build --no-skip-current --platform iOS --cache-builds --use-xcframeworks
+- pod lib lint --allow-warnings
 after_deploy:
-- pod trunk push
+- pod trunk push --allow-warnings
 deploy:
   provider: releases
   api_key:
