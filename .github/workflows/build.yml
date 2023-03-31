@@ -1,0 +1,34 @@
+name: Build
+on: 
+  push:
+    paths:
+      - Sources/**
+      - Tests/**
+      - .github/**
+  pull_request:
+    paths:
+      - Sources/**
+      - Tests/**
+      - .github/**
+jobs:
+  spm:
+    runs-on: macos-12
+    steps:
+    - uses: actions/checkout@v3.5.0
+    - uses: AckeeCZ/load-xcode-version@1.1.0
+    - name: SPM build
+      run: swift build -Xswiftc "-sdk" -Xswiftc "`xcrun --sdk iphonesimulator --show-sdk-path`" -Xswiftc "-target" -Xswiftc "x86_64-apple-ios16.2-simulator"
+  carthage:
+    runs-on: macos-12
+    steps:
+    - uses: actions/checkout@v3.5.0
+    - uses: AckeeCZ/load-xcode-version@1.1.0
+    - name: Carthage build
+      run: carthage build --platform iOS --use-xcframeworks --no-skip-current
+  cocoapods:
+    runs-on: macos-12
+    steps:
+    - uses: actions/checkout@v3.5.0
+    - uses: AckeeCZ/load-xcode-version@1.1.0
+    - name: Cocoapods lint
+      run: pod lib lint
