@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "InfiniteScroller",
     platforms: [
-        .iOS(.v9),
+        .iOS(.v11),
     ],
     products: [
         .library(name: "InfiniteScroller", targets: ["InfiniteScroller"]),
