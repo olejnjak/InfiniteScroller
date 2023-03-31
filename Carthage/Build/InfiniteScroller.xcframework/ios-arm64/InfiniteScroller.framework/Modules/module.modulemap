@@ -1,4 +1,0 @@
-framework module InfiniteScroller {
-  header "InfiniteScroller-Swift.h"
-  requires objc
-}
