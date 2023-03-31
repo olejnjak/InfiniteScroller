@@ -10,6 +10,6 @@ let package = Package(
         .library(name: "InfiniteScroller", targets: ["InfiniteScroller"]),
     ],
     targets: [
-        .target(name: "InfiniteScroller", path: "InfiniteScroller")
+        .target(name: "InfiniteScroller")
     ]
 )

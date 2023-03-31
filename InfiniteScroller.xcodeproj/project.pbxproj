@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6922F09221132F24003474FC /* InfiniteScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 6922F09021132F24003474FC /* InfiniteScroller.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		69B86B9021144CE600FBC052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B86B8F21144CE600FBC052 /* AppDelegate.swift */; };
 		69B86B9221144CE600FBC052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B86B9121144CE600FBC052 /* ViewController.swift */; };
 		69B86B9521144CE600FBC052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B86B9321144CE600FBC052 /* Main.storyboard */; };
 		69B86B9721144CE600FBC052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B86B9621144CE600FBC052 /* Assets.xcassets */; };
 		69B86B9A21144CE600FBC052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B86B9821144CE600FBC052 /* LaunchScreen.storyboard */; };
-		69B86BA021144FA200FBC052 /* InfiniteScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B86B9F21144FA200FBC052 /* InfiniteScroller.swift */; };
 		69B86BA3211452A400FBC052 /* InfiniteScroller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6922F08D21132F24003474FC /* InfiniteScroller.framework */; };
 		69B86BA4211452A400FBC052 /* InfiniteScroller.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6922F08D21132F24003474FC /* InfiniteScroller.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69D75E6D29D6FDDD0084E51B /* InfiniteScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D75E6B29D6FDDD0084E51B /* InfiniteScroller.swift */; };
+		69D75E6E29D6FDDD0084E51B /* InfiniteScroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 69D75E6C29D6FDDD0084E51B /* InfiniteScroller.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		6922F08D21132F24003474FC /* InfiniteScroller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InfiniteScroller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6922F09021132F24003474FC /* InfiniteScroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfiniteScroller.h; sourceTree = "<group>"; };
-		6922F09121132F24003474FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69A241C529D6FD1B0008C21B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		69B86B8D21144CE500FBC052 /* InfiniteScroller Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InfiniteScroller Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69B86B8F21144CE600FBC052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +52,10 @@
 		69B86B9621144CE600FBC052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B86B9921144CE600FBC052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69B86B9B21144CE600FBC052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		69B86B9F21144FA200FBC052 /* InfiniteScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScroller.swift; sourceTree = "<group>"; };
 		69B86BA82114714400FBC052 /* InfiniteScroller.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = InfiniteScroller.podspec; sourceTree = "<group>"; };
+		69D75E6B29D6FDDD0084E51B /* InfiniteScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteScroller.swift; sourceTree = "<group>"; };
+		69D75E6C29D6FDDD0084E51B /* InfiniteScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiniteScroller.h; sourceTree = "<group>"; };
+		69D75E7029D6FE1F0084E51B /* InfiniteScroller.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfiniteScroller.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +80,11 @@
 		6922F08321132F24003474FC = {
 			isa = PBXGroup;
 			children = (
+				69D75E6A29D6FDDD0084E51B /* InfiniteScroller */,
+				69B86B8E21144CE600FBC052 /* InfiniteScroller Example */,
+				69D75E6F29D6FE1F0084E51B /* Supporting files */,
 				69A241C529D6FD1B0008C21B /* Package.swift */,
 				69B86BA82114714400FBC052 /* InfiniteScroller.podspec */,
-				6922F08F21132F24003474FC /* InfiniteScroller */,
-				69B86B8E21144CE600FBC052 /* InfiniteScroller Example */,
 				6922F08E21132F24003474FC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,24 +96,6 @@
 				69B86B8D21144CE500FBC052 /* InfiniteScroller Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6922F08F21132F24003474FC /* InfiniteScroller */ = {
-			isa = PBXGroup;
-			children = (
-				69B86B9F21144FA200FBC052 /* InfiniteScroller.swift */,
-				6922F09821132F38003474FC /* Supporting files */,
-			);
-			path = InfiniteScroller;
-			sourceTree = "<group>";
-		};
-		6922F09821132F38003474FC /* Supporting files */ = {
-			isa = PBXGroup;
-			children = (
-				6922F09021132F24003474FC /* InfiniteScroller.h */,
-				6922F09121132F24003474FC /* Info.plist */,
-			);
-			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		69B86B8E21144CE600FBC052 /* InfiniteScroller Example */ = {
@@ -128,6 +111,24 @@
 			path = "InfiniteScroller Example";
 			sourceTree = "<group>";
 		};
+		69D75E6A29D6FDDD0084E51B /* InfiniteScroller */ = {
+			isa = PBXGroup;
+			children = (
+				69D75E6B29D6FDDD0084E51B /* InfiniteScroller.swift */,
+				69D75E6C29D6FDDD0084E51B /* InfiniteScroller.h */,
+			);
+			name = InfiniteScroller;
+			path = Sources/InfiniteScroller;
+			sourceTree = "<group>";
+		};
+		69D75E6F29D6FE1F0084E51B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				69D75E7029D6FE1F0084E51B /* InfiniteScroller.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -135,7 +136,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6922F09221132F24003474FC /* InfiniteScroller.h in Headers */,
+				69D75E6E29D6FDDD0084E51B /* InfiniteScroller.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69B86BA021144FA200FBC052 /* InfiniteScroller.swift in Sources */,
+				69D75E6D29D6FDDD0084E51B /* InfiniteScroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$SRCROOT/Supporting files/$(TARGET_NAME).plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -398,6 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$SRCROOT/Supporting files/$(TARGET_NAME).plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -421,7 +424,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/InfiniteScroller/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +452,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/InfiniteScroller/Supporting files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
