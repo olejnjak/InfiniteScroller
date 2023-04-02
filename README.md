@@ -26,7 +26,7 @@ Well in my apps I always deal with the same things again. Every scrolling screen
 Usage is very simple. Just create an instance of `InfiniteScroller` with the scrollView you want paged.
 
 ```swift
-let infiniteScroller = InfiniteScroll(scrollView: scrollView)
+let infiniteScroller = Scroller(scrollView: scrollView)
 ```
 
 Add the next page callback.
