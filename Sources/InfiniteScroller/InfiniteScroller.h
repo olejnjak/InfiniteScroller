@@ -1,11 +1,3 @@
-//
-//  InfiniteScroller.h
-//  InfiniteScroller
-//
-//  Created by Jakub Olejník on 02/08/2018.
-//  Copyright © 2018 Jakub Olejník. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 //! Project version number for InfiniteScroller.

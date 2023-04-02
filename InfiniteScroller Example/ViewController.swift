@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  InfiniteScroller Example
-//
-//  Created by Jakub Olejník on 03/08/2018.
-//  Copyright © 2018 Jakub Olejník. All rights reserved.
-//
-
 import UIKit
 import InfiniteScroller
 
@@ -16,7 +8,7 @@ final class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private lazy var infiniteScroller = InfiniteScroller(scrollView: tableView)
+    private lazy var infiniteScroller = Scroller(scrollView: tableView)
     
     // MARK: Initializers
     

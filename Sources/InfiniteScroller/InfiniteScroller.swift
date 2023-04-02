@@ -1,14 +1,6 @@
-//
-//  InfiniteScroller.swift
-//  InfiniteScroller
-//
-//  Created by Jakub Olejník on 03/08/2018.
-//  Copyright © 2018 Jakub Olejník. All rights reserved.
-//
-
 import UIKit
 
-public final class InfiniteScroller {
+public final class Scroller {
     public typealias NextPageCompletion = () -> (Void)
     
     public var nextPageAction: (@escaping NextPageCompletion) -> Void = { $0() }
